@@ -1,1 +1,14 @@
 /* ESTILOS DEL MAIN */
+
+.main-container {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-evenly;
+	margin-top: 15rem;
+}
+
+.main__single-mode,
+.main__advanced-mode {
+	text-align: center;
+}
+
