@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
-    <link rel="icon" type="image/svg+xml" href="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Rock Paper Scissors game - Simple version</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- PON UN FAVICON!!! -->
+  <link rel="icon" type="image/svg+xml" href="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CAMBIA EL TITLE!!! -->
+  <title>Rock Paper Scissors game - Simple version</title>
+</head>
+
+<body>
 
 
-    <!-- body, cambiar fondo en esta pagina -->
+  <!-- body, cambiar fondo en esta pagina -->
 
-    simple
+  <main class="container-simple">
 
-    
+    <div class="simple__header">
+      <div class="simple__header-score">
+        <span class="score-title">YOU</span>
+        <span class="score-points" id="UserScore">0</span>
+      </div>
+      <div class="simple__header-title">
+        <p class="p-title   ">ROCK</p>
+        <p class="p-title  ">PAPER</p>
+        <p class="p-title  ">SCISSORS</p>
+      </div>
+      <div class="simple__header-score">
+        <span class="score-title" >PC</span>
+        <span class="score-points" id="PCScore">0</span>
+      </div>
+    </div>
+
+    <div class="simple__body" id="game-container">
+      <div class="simple__body-icon paper" id="paperOption" data-element="paper">
+        <img src="./assets/images/icon-paper.svg" alt="icono papel" class="img-paper img-icon">
+      </div>
+      <div class="simple__body-icon scissors" id="scissorsOption" data-element="scissors">
+        <img src="./assets/images/icon-scissors.svg" alt="icono tijera" class="img-scissors img-icon">
+      </div>
+      <div class="simple__body-icon rock" id="rockOption" data-element="rock">
+        <img src="./assets/images/icon-rock.svg" alt="icono roca" class="img-rock img-icon">
+      </div>
+
+    </div>
+
+  </main>
 
 
 
-    <script type="module" src="./js/index.js"></script>
-  </body>
+
+
+
+  <script type="module" src="./js/index.js"></script>
+</body>
+
 </html>
