@@ -55,10 +55,13 @@
 	font-family: var(--text-font);
 }
 
-.simple__body {
+.simple__body,
+.simple__body-result,
+.advanced__body {
 	background-image: url('/assets/images/bg-triangle.svg');
 	background-repeat: no-repeat;
 	background-position: center;
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -66,6 +69,19 @@
 	gap: 50px;
 	text-align: center;
 }
+
+.advanced__body {
+	background-image: url('/assets/images/bg-pentagon.svg');
+	background-size: 80%;
+}
+
+.simple__body-result {
+	flex-wrap: nowrap;
+	gap: 30px;
+
+	// transition: 5s all ease-in-out;
+}
+
 .simple__body-icon {
 	width: 200px;
 	height: 200px;
@@ -86,11 +102,11 @@
 	border-color: var(--border-color);
 	&:hover {
 		// box-shadow: 0 0 50px 20px var(--shadow-color);
-		box-shadow: 0 0 50px 20px var(--shadow-color), inset 0 10px rgba(0, 0, 150, 0.1);;
+		box-shadow: 0 0 50px 20px var(--shadow-color),
+			inset 0 10px rgba(0, 0, 150, 0.1);
 		transform: scale(0.9);
 		transition: transform 0.2s;
 	}
-	
 }
 
 .img-icon {
@@ -112,4 +128,35 @@
 .rock {
 	--border-color: var(--rock);
 	--shadow-color: var(--rock-shadow);
+}
+
+.game-result-title,
+.picked-title {
+	color: var(--text-color);
+	font-family: var(--text-font);
+	font-size: 26px;
+}
+
+.play-btn {
+	padding: 1rem;
+	border-radius: 15px;
+	font-size: 1.3rem;
+	font-family: var(--text-font);
+	font-weight: 700;
+	cursor: pointer;
+	&:hover {
+		color: rgb(192, 64, 64);
+	}
+}
+
+// #### advanced.html
+
+.lizard {
+	--border-color: var(--lizard);
+	--shadow-color: var(--lizard-shadow);
+}
+
+.spock {
+	--border-color: var(--spock);
+	--shadow-color: var(--spock-shadow);
 }

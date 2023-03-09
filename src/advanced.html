@@ -1,27 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
-    <link rel="icon" type="image/svg+xml" href="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Rock Paper Scissors game - Advanced version</title>
-  </head>
-  <body>
 
+<head>
+  <meta charset="UTF-8" />
+  <!-- PON UN FAVICON!!! -->
+  <link rel="icon" type="image/svg+xml" href="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CAMBIA EL TITLE!!! -->
+  <title>Rock Paper Scissors Lizard Spock game - Advanced version</title>
+</head>
 
-    <!-- body, cambiar fondo en esta pagina -->
-
-    Advanced
-
-    
+<body>
 
 
 
-    <script type="module" src="./js/index.js"></script>
-  </body>
+
+  <main class="container-simple">
+
+    <div class="simple__header">
+      <div class="simple__header-score">
+        <span class="score-title">YOU</span>
+        <span class="score-points" id="UserScore">0</span>
+      </div>
+      <div class="simple__header-title">
+        <p class="p-title ">ROCK</p>
+        <p class="p-title ">PAPER</p>
+        <p class="p-title ">SCISSORS</p>
+        <p class="p-title ">LIZARD</p>
+        <p class="p-title ">SPOCK</p>
+      </div>
+      <div class="simple__header-score">
+        <span class="score-title">PC</span>
+        <span class="score-points" id="PCScore">0</span>
+      </div>
+    </div>
+
+    <div class="advanced__body" id="game-container">
+      <div class="simple__body-icon paper" id="paperOption" data-element="paper">
+        <img src="./assets/images/icon-paper.svg" alt="icono papel" class="img-paper img-icon">
+      </div>
+      <div class="simple__body-icon scissors" id="scissorsOption" data-element="scissors">
+        <img src="./assets/images/icon-scissors.svg" alt="icono tijera" class="img-scissors img-icon">
+      </div>
+      <div class="simple__body-icon rock" id="rockOption" data-element="rock">
+        <img src="./assets/images/icon-rock.svg" alt="icono roca" class="img-rock img-icon">
+      </div>
+      <div class="simple__body-icon lizard" id="lizardOption" data-element="lizard">
+        <img src="./assets/images/icon-lizard.svg" alt="icono lagarto" class="img-lizard img-icon">
+      </div>
+      <div class="simple__body-icon spock" id="spockOption" data-element="spock">
+        <img src="./assets/images/icon-spock.svg" alt="icono spock" class="img-spock img-icon">
+      </div>
+
+      
+
+    </div>
+
+    <!-- container resultados -->
+    <div class="simple__body-result hide" id="game-container-result">
+      <div class="user-picked">
+        <h3 class="user-picked-title picked-title">Your Picked</h3>
+        <div class="simple__body-icon" id="user-picked-option">
+          <img src="" class="img-icon" id="user-picked-img">
+        </div>
+      </div>
+
+      <div class="game-result">
+        <h3 class="game-result-title " id="game-result"></h3>
+        <button class="play-btn" id="play-again-btn">PLAY AGAIN</button>
+      </div>
+
+
+      <div class="pc-picked">
+        <h3 class="user-picked-title picked-title">The PC Picked</h3>
+        <div class="simple__body-icon " id="pc-picked-option">
+          <img src="" class=" img-icon" id="pc-picked-img">
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </main>
+
+
+
+
+
+
+  <script type="module" src="./js/index.js"></script>
+</body>
+
 </html>
