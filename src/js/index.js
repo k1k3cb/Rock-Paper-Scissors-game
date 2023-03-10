@@ -1,6 +1,12 @@
 // El styles lo importamos aquí, ya se carga después al compilar todo
 import '../scss/styles.scss';
 
+import rockImage from '../assets/images/icon-rock.svg';
+import paperImage from '../assets/images/icon-paper.svg';
+import scissorsImage from '../assets/images/icon-scissors.svg';
+import lizardImage from '../assets/images/icon-lizard.svg';
+import spockImage from '../assets/images/icon-spock.svg';
+
 const gameContainerElement = document.getElementById('game-container');
 // const optionElement = document.querySelectorAll('[data-element]');
 
@@ -13,6 +19,8 @@ const gameResultElement = document.getElementById('game-result');
 const playAgainBtnElement = document.getElementById('play-again-btn');
 const pcPickedOptionElement = document.getElementById('pc-picked-option');
 const pcPickedImgElement = document.getElementById('pc-picked-img');
+
+
 
 const gameOptions = ['paper', 'rock', 'scissors'];
 let userOption = '';
@@ -57,6 +65,14 @@ const gameRules = {
 	}
 };
 
+const IMAGES = {
+	rock: rockImage,
+	paper: paperImage,
+	scissors: scissorsImage,
+	lizard: lizardImage,
+	spock: spockImage
+};
+
 //# detectar modo de juego
 if (window.location.pathname.includes('advanced.html')) {
 	gameOptions.push('lizard', 'spock');
@@ -95,8 +111,8 @@ if(gameContainerElement){
 	pcSelection = pcSelects();
 	containerResultElement.classList.remove('hide');
 	gameContainerElement.classList.add('hide');
-	pcPickedImgElement.src = `./assets/images/icon-${pcSelection}.svg`;
-	userPickedImgElement.src = `./assets/images/icon-${userOption}.svg`;
+	pcPickedImgElement.src = IMAGES[pcSelection];
+	userPickedImgElement.src = IMAGES[userOption];
 	userPickedOptionElement.classList.add(userOption);
 	userPickedImgElement.classList.add(`img-${userOption}`);
 	pcPickedOptionElement.classList.add(pcSelection);
