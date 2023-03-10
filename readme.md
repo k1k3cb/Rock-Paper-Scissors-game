@@ -1,4 +1,4 @@
-# Password Generator
+# Rock-Paper-Scissors game
 
 ![Imagen del proyecto](https://github.com/k1k3cb/Rock-Paper-Scissors-game/blob/main/src/assets/project_captures/home-game.jpg?raw=true)
 
@@ -10,11 +10,15 @@
 
 ## Descripción 📑
 
-Este proyecto consiste en el desarrollo de una aplicación web para generar contraseñas a partir de los inputs marcados (mayúsculas, minúsculas, números y símbolos), además deberás indicar la longitud de la contraseña que deseas generar. 
+Este proyecto consiste en el desarrollo del juego del **"piedra papel tijera"**. Desde la home de la aplicación puedes elegir la modalidad del juego:
+- Piedra-papel-tijera
+- Piedra-papel-tijera-lagarto-spock
+
+El juego iniciará una vez el usuario seleccione una opción del juego (piedra-papel-tijera....lagarto-spock)
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
-Mendiante este proyecto en JS he aprendido la lógica para poder generar  una contraseña de forma aleatoria a través de la selección de distintos tipos de inputs.
+Mendiante este proyecto he aprendido a importar imágenes desde Javascript con Vite, además de la lógica de comparar opcines de un usuario contra la opción aleatorio del pc.
 
 ## Tecnologías 🛠
 
