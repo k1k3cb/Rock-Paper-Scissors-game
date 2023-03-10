@@ -12,12 +12,13 @@
 	text-align: center;
 }
 
-// #### simple.html
+// #### simple.html // #### advanced.html
 
 .container-simple {
-	width: 60%;
+	// width: 60%;
+	width: 48.75rem;
 	margin-inline: auto;
-	margin-top: 50px;
+	margin-top: 3.125rem;
 }
 
 .simple__header {
@@ -25,8 +26,12 @@
 	border-radius: 15px;
 	display: flex;
 	justify-content: space-around;
-	padding: 20px;
-	margin-bottom: 80px;
+	padding: 1.25rem;
+	margin-bottom: 5rem;
+}
+
+.simple__header--advanced {
+	margin-bottom: 1.875rem;
 }
 .simple__header-title {
 	text-align: center;
@@ -38,7 +43,8 @@
 	flex-direction: column;
 	align-items: center;
 	border-radius: 15px;
-	width: 120px;
+	width: 7.5rem;
+	justify-content: center;
 }
 
 .score-title {
@@ -66,13 +72,15 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	gap: 50px;
+	gap: 3.125rem;
 	text-align: center;
 }
 
 .advanced__body {
 	background-image: url('/assets/images/bg-pentagon.svg');
-	background-size: 80%;
+	background-size: 75%;
+	flex-direction: column;
+	gap: 0;
 }
 
 .simple__body-result {
@@ -83,10 +91,10 @@
 }
 
 .simple__body-icon {
-	width: 200px;
-	height: 200px;
+	width: 12.5rem;
+	height: 12.5rem;
 	background-color: white;
-	padding: 20px;
+	padding: 1.25rem;
 	margin-inline: 20px;
 	display: flex;
 	align-items: center;
@@ -94,25 +102,31 @@
 	border: 18px solid;
 	cursor: pointer;
 	box-shadow: 0 10px var(--shadow-color), inset 0 10px rgba(0, 0, 150, 0.1);
-}
-
-.simple__body-icon {
 	--shadow-color: rgb(251, 246, 247);
 	--border-color: rgb(237, 226, 237);
 	border-color: var(--border-color);
 	&:hover {
 		// box-shadow: 0 0 50px 20px var(--shadow-color);
-		box-shadow: 0 0 50px 20px var(--shadow-color),
+		box-shadow: 0 10px var(--shadow-color) ,0 0 50px 20px var(--shadow-color),
 			inset 0 10px rgba(0, 0, 150, 0.1);
 		transform: scale(0.9);
 		transition: transform 0.2s;
 	}
 }
 
+.simple__body-icon--advanced {
+	width: 10.625rem;
+	height: 10.625rem;
+}
+
 .img-icon {
 	margin-inline: auto;
-	width: 90px;
+	width: 5.625rem;
 	pointer-events: none;
+}
+
+.img-icon--advanced {
+	width: 5rem;
 }
 
 .paper {
@@ -134,7 +148,7 @@
 .picked-title {
 	color: var(--text-color);
 	font-family: var(--text-font);
-	font-size: 26px;
+	font-size: 1.625rem;
 }
 
 .play-btn {
@@ -149,8 +163,6 @@
 	}
 }
 
-// #### advanced.html
-
 .lizard {
 	--border-color: var(--lizard);
 	--shadow-color: var(--lizard-shadow);
@@ -160,3 +172,22 @@
 	--border-color: var(--spock);
 	--shadow-color: var(--spock-shadow);
 }
+
+.pentagon-row-2 {
+	display: flex;
+	gap: 15.625rem;
+	margin-bottom: 5rem;
+}
+
+.pentagon-row-3 {
+	display: flex;
+	gap: 9.375rem;
+}
+
+.simple_body-result--mod{
+
+	background-size: 16.625rem;
+    background-position: center 6.25rem;    
+    height: 21.3125rem;
+}
+

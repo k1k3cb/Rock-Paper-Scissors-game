@@ -57,13 +57,18 @@ const gameRules = {
 	}
 };
 
-// ::jugada PC simple
+//# detectar modo de juego
+if (window.location.pathname.includes('advanced.html')) {
+	gameOptions.push('lizard', 'spock');
+}
+
+// #jugada PC simple
 const pcSelects = () => {
 	pcSelection = Math.floor(Math.random() * gameOptions.length);
 	return gameOptions[pcSelection];
 };
 
-// ::comparar jugada
+// #comparar jugada
 const result = (userOption, pcSelection) => {
 	console.log(userOption, '--', pcSelection);
 	if (userOption === pcSelection) {
@@ -82,18 +87,9 @@ const result = (userOption, pcSelection) => {
 	}
 };
 
-// ::elección jugador PC and play
-
-// opcion con '[data-element]'
-// optionElement.forEach(option => {
-// 	option.addEventListener('click', () => {
-// 		// console.dir(option.dataset.element);
-// 		UserOption = option.dataset.element;
-//     result(UserOption, pcSelects());
-// 	});
-// });
-
-gameContainerElement.addEventListener('click', e => {
+// #elección jugador PC and play
+if(gameContainerElement){
+	gameContainerElement.addEventListener('click', e => {
 	if (!e.target.dataset.element) return;
 	userOption = e.target.dataset.element;
 	pcSelection = pcSelects();
@@ -104,16 +100,21 @@ gameContainerElement.addEventListener('click', e => {
 	userPickedOptionElement.classList.add(userOption);
 	userPickedImgElement.classList.add(`img-${userOption}`);
 	pcPickedOptionElement.classList.add(pcSelection);
-	pcPickedImgElement.classList.add(`img-${pcSelection}`);
-
+	pcPickedImgElement.classList.add(`img-${pcSelection}`);	
+containerResultElement.classList.add('simple_body-result--mod');
 	result(userOption, pcSelection);
 });
+}
 
-playAgainBtnElement.addEventListener('click', () => {
-	containerResultElement.classList.add('hide');
-	gameContainerElement.classList.remove('hide');
-	userPickedOptionElement.classList.remove(userOption);
-	userPickedImgElement.classList.remove(`img-${userOption}`);
-	pcPickedOptionElement.classList.remove(pcSelection);
-	pcPickedImgElement.classList.remove(`img-${pcSelection}`);
-});
+
+// #boton reinicio partida
+if (playAgainBtnElement) {
+	playAgainBtnElement.addEventListener('click', () => {
+		containerResultElement.classList.add('hide');		
+		gameContainerElement.classList.remove('hide');
+		userPickedOptionElement.classList.remove(userOption);
+		userPickedImgElement.classList.remove(`img-${userOption}`);
+		pcPickedOptionElement.classList.remove(pcSelection);
+		pcPickedImgElement.classList.remove(`img-${pcSelection}`);
+	});
+};

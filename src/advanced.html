@@ -20,7 +20,7 @@
 
   <main class="container-simple">
 
-    <div class="simple__header">
+    <div class="simple__header simple__header--advanced">
       <div class="simple__header-score">
         <span class="score-title">YOU</span>
         <span class="score-points" id="UserScore">0</span>
@@ -39,24 +39,30 @@
     </div>
 
     <div class="advanced__body" id="game-container">
-      <div class="simple__body-icon paper" id="paperOption" data-element="paper">
-        <img src="./assets/images/icon-paper.svg" alt="icono papel" class="img-paper img-icon">
-      </div>
-      <div class="simple__body-icon scissors" id="scissorsOption" data-element="scissors">
-        <img src="./assets/images/icon-scissors.svg" alt="icono tijera" class="img-scissors img-icon">
-      </div>
-      <div class="simple__body-icon rock" id="rockOption" data-element="rock">
-        <img src="./assets/images/icon-rock.svg" alt="icono roca" class="img-rock img-icon">
-      </div>
-      <div class="simple__body-icon lizard" id="lizardOption" data-element="lizard">
-        <img src="./assets/images/icon-lizard.svg" alt="icono lagarto" class="img-lizard img-icon">
-      </div>
-      <div class="simple__body-icon spock" id="spockOption" data-element="spock">
-        <img src="./assets/images/icon-spock.svg" alt="icono spock" class="img-spock img-icon">
+
+
+      <div class="simple__body-icon simple__body-icon--advanced paper pentagon-row-1" id="paperOption" data-element="paper">
+        <img src="./assets/images/icon-paper.svg" alt="icono papel" class="img-paper img-icon img-icon--advanced">
       </div>
 
-      
+      <div class="pentagon-row-2">
+        <div class="simple__body-icon simple__body-icon--advanced scissors" id="scissorsOption" data-element="scissors">
+          <img src="./assets/images/icon-scissors.svg" alt="icono tijera"
+            class="img-scissors img-icon img-icon--advanced">
+        </div>
+        <div class="simple__body-icon simple__body-icon--advanced rock" id="rockOption" data-element="rock">
+          <img src="./assets/images/icon-rock.svg" alt="icono roca" class="img-rock img-icon img-icon--advanced">
+        </div>
+      </div>
 
+      <div class="pentagon-row-3">
+        <div class="simple__body-icon simple__body-icon--advanced lizard" id="lizardOption" data-element="lizard">
+          <img src="./assets/images/icon-lizard.svg" alt="icono lagarto" class="img-lizard img-icon img-icon--advanced">
+        </div>
+        <div class="simple__body-icon simple__body-icon--advanced spock" id="spockOption" data-element="spock">
+          <img src="./assets/images/icon-spock.svg" alt="icono spock" class="img-spock img-icon img-icon--advanced">
+        </div>
+      </div>
     </div>
 
     <!-- container resultados -->
