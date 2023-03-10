@@ -18,7 +18,7 @@ El juego iniciará una vez el usuario seleccione una opción del juego (piedra-p
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
-Mendiante este proyecto he aprendido a importar imágenes desde Javascript con Vite, además de la lógica de comparar opcines de un usuario contra la opción aleatorio del pc.
+Mendiante este proyecto he aprendido a importar imágenes desde Javascript con Vite, además de la lógica de comparar opciones de un usuario contra la opción aleatoria del PC.
 
 ## Tecnologías 🛠
 
