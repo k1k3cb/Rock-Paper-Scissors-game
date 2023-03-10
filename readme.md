@@ -1,11 +1,11 @@
 # Password Generator
 
-![Imagen del proyecto](https://raw.githubusercontent.com/k1k3cb/password-generator/main/src/assets/images/project_captures/captura-password-generator.jpg)
+![Imagen del proyecto](https://github.com/k1k3cb/Rock-Paper-Scissors-game/blob/main/src/assets/project_captures/home-game.jpg?raw=true)
 
 ## Ejemplo en vivo
  
 
-- [Enlace al proyecto](https://password-generator-2koc.onrender.com/)
+- [Enlace al proyecto](https://rock-paper-scissors-game-5u14.onrender.com)
 
 
 ## Descripción 📑
@@ -36,9 +36,13 @@ Mendiante este proyecto en JS he aprendido la lógica para poder generar  una co
 
 Si quieres echar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://raw.githubusercontent.com/k1k3cb/password-generator/main/src/assets/images/project_captures/captura-password-generator-weak.jpg)
+![Captura del proyecto](https://github.com/k1k3cb/Rock-Paper-Scissors-game/blob/main/src/assets/project_captures/simple-mode.jpg?raw=true)
 
-![Captura del proyecto](https://raw.githubusercontent.com/k1k3cb/password-generator/main/src/assets/images/project_captures/captura-password-generator-strenght.jpg)
+![Captura del proyecto](https://github.com/k1k3cb/Rock-Paper-Scissors-game/blob/main/src/assets/project_captures/advanced-mode.jpg?raw=true)
+
+![Captura del proyecto](https://github.com/k1k3cb/Rock-Paper-Scissors-game/blob/main/src/assets/project_captures/game-result.jpg?raw=true)
+
+
 
 ## Autor ✒️
 
